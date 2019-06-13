@@ -1,11 +1,10 @@
 import {
     CustomBaseView,
-    CustomView,
 } from "../../utils/CustomComponent";
 import {
     TabBarItem,
-    Utils, StatusBar,
-    React, Component, CenterView, CustomButton,
+    Utils,
+    React, Component, CustomButton,
 } from "rn-curiosity"
 import {publicCss} from "../../styles/PublicCss";
 import NativeUtils from "rn-curiosity/src/NativeUtils";
@@ -48,13 +47,11 @@ export default class HomeTab extends Component {
                     buttonStyle={{backgroundColor: Colors.blueStart, padding: 40, marginTop: 100}}
                     onPress={() => {
                         dark = !dark
-                        console.log(dark)
                         if (dark) {
-                             NativeUtils.setStatusBarColor(dark, Colors.transparent)
+                            NativeUtils.setStatusBarColor(dark, Colors.redStart)
                         } else {
-                            NativeUtils.setStatusBarColor(dark, "#00000001")
+                            NativeUtils.setStatusBarColor(dark, Colors.blueStart)
                         }
-
                     }}>{"改变颜色"}</CustomButton>
             </CustomBaseView>
         )

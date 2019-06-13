@@ -4715,9 +4715,9 @@ rimraf@~2.2.6:
   version "2.2.8"
   resolved "https://registry.npmjs.org/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
 
-rn-curiosity@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/rn-curiosity/-/rn-curiosity-2.0.3.tgz#a807e8614d45bd9d4f540224d54df3a848a9c106"
+rn-curiosity@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.npmjs.org/rn-curiosity/-/rn-curiosity-2.1.1.tgz#32a52be243c3fb69bf641434bf3c102722da79a2"
   dependencies:
     prop-types "^15.7.2"
     react-native-progress "~3.5.0"

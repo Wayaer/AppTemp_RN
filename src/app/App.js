@@ -61,7 +61,6 @@ export default class App extends Component {
     }
 
     componentDidMount() {
-        console.log(Constant)
         Utils.netInfoAddEventListener(this.netInfo)
         Utils.backHandlerAddEventListener(this.onBackPressed)
     }
@@ -90,7 +89,6 @@ export default class App extends Component {
     render() {
         return (
             <CustomView style={{flex: 1,}}>
-
                 <CreateTab onNavigationStateChange={(prevState, newState, action) => {
                     if (Android) {
                         if (newState.routes.length > 1) {
