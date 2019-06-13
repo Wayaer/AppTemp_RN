@@ -1,9 +1,24 @@
-/**
- * @format
- */
+import {AppRegistry, YellowBox} from "react-native"
+import './src/utils/Global'
+import App from './src/app/App'
+import {name} from './package'
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+if (!__DEV__) {
+    global.console = {
+        info: () => {
+        },
+        log: () => {
+        },
+        warn: () => {
+        },
+        error: () => {
+        },
+    };
+}
 
-AppRegistry.registerComponent(appName, () => App);
+console.disableYellowBox = true
+
+YellowBox.ignoreWarnings(['Require cycle:']);
+
+AppRegistry.registerComponent(name, () => App);
+

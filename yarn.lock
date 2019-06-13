@@ -712,6 +712,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^12.0.9"
 
+"@react-native-community/async-storage@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.npmjs.org/@react-native-community/async-storage/-/async-storage-1.4.2.tgz#b29d2fa1b294fec8526f69b852a3deda248c8d81"
+
 "@react-native-community/cli@^1.2.1":
   version "1.9.8"
   resolved "https://registry.npmjs.org/@react-native-community/cli/-/cli-1.9.8.tgz#8488699f78b146cab2d7451951c4218671812cdc"
@@ -750,6 +754,27 @@
     ws "^1.1.0"
     xcode "^2.0.0"
     xmldoc "^0.4.0"
+
+"@react-native-community/netinfo@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.npmjs.org/@react-native-community/netinfo/-/netinfo-3.2.1.tgz#cd073b81a4b978f7f55f1a960a0b56c462813e02"
+
+"@react-navigation/core@~3.4.1":
+  version "3.4.2"
+  resolved "https://registry.npmjs.org/@react-navigation/core/-/core-3.4.2.tgz#bec563e94fde40fbab3730cdc97f22afbb2a1498"
+  dependencies:
+    hoist-non-react-statics "^3.3.0"
+    path-to-regexp "^1.7.0"
+    query-string "^6.4.2"
+    react-is "^16.8.6"
+
+"@react-navigation/native@~3.5.0":
+  version "3.5.0"
+  resolved "https://registry.npmjs.org/@react-navigation/native/-/native-3.5.0.tgz#f5d16e0845ac26d1147d1caa481f18a00740e7ae"
+  dependencies:
+    hoist-non-react-statics "^3.0.1"
+    react-native-safe-area-view "^0.14.1"
+    react-native-screens "^1.0.0 || ^1.0.0-alpha"
 
 "@types/babel__core@^7.1.0":
   version "7.1.2"
@@ -1116,6 +1141,10 @@ balanced-match@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
 
+base-64@0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npmjs.org/base-64/-/base-64-0.1.0.tgz#780a99c84e7d600260361511c4877613bf24f6bb"
+
 base64-js@^1.1.2, base64-js@^1.2.3:
   version "1.3.0"
   resolved "https://registry.npmjs.org/base64-js/-/base64-js-1.3.0.tgz#cab1e6118f051095e58b5281aea8c1cd22bfc0e3"
@@ -1470,6 +1499,14 @@ cosmiconfig@^5.0.5:
     is-directory "^0.3.1"
     js-yaml "^3.13.1"
     parse-json "^4.0.0"
+
+create-react-class@15.6.0:
+  version "15.6.0"
+  resolved "https://registry.npmjs.org/create-react-class/-/create-react-class-15.6.0.tgz#ab448497c26566e1e29413e883207d57cfe7bed4"
+  dependencies:
+    fbjs "^0.8.9"
+    loose-envify "^1.3.1"
+    object-assign "^4.1.1"
 
 create-react-class@^15.6.3:
   version "15.6.3"
@@ -1909,7 +1946,7 @@ fbjs-scripts@^1.0.0:
     semver "^5.1.0"
     through2 "^2.0.0"
 
-fbjs@^0.8.9:
+fbjs@^0.8.4, fbjs@^0.8.9, fbjs@~0.8.9:
   version "0.8.17"
   resolved "https://registry.npmjs.org/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
   dependencies:
@@ -2124,6 +2161,17 @@ glob-parent@^2.0.0:
   dependencies:
     is-glob "^2.0.0"
 
+glob@7.0.6:
+  version "7.0.6"
+  resolved "https://registry.npmjs.org/glob/-/glob-7.0.6.tgz#211bafaf49e525b8cd93260d14ab136152b3f57a"
+  dependencies:
+    fs.realpath "^1.0.0"
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "^3.0.2"
+    once "^1.3.0"
+    path-is-absolute "^1.0.0"
+
 glob@^7.1.1, glob@^7.1.2, glob@^7.1.3:
   version "7.1.4"
   resolved "https://registry.npmjs.org/glob/-/glob-7.1.4.tgz#aa608a2f6c577ad357e1ae5a5c26d9a8d1969255"
@@ -2226,6 +2274,16 @@ has@^1.0.1, has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+hoist-non-react-statics@^2.3.1, hoist-non-react-statics@^2.5.0:
+  version "2.5.5"
+  resolved "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
+
+hoist-non-react-statics@^3.0.1, hoist-non-react-statics@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.0.tgz#b09178f0122184fb95acf525daaecb4d8f45958b"
+  dependencies:
+    react-is "^16.7.0"
+
 hosted-git-info@^2.1.4:
   version "2.7.1"
   resolved "https://registry.npmjs.org/hosted-git-info/-/hosted-git-info-2.7.1.tgz#97f236977bd6e125408930ff6de3eec6281ec047"
@@ -2269,6 +2327,10 @@ ignore-walk@^3.0.1:
 image-size@^0.6.0:
   version "0.6.3"
   resolved "https://registry.npmjs.org/image-size/-/image-size-0.6.3.tgz#e7e5c65bb534bd7cdcedd6cb5166272a85f75fb2"
+
+immutable@~3.7.6:
+  version "3.7.6"
+  resolved "https://registry.npmjs.org/immutable/-/immutable-3.7.6.tgz#13b4d3cb12befa15482a26fe1b2ebae640071e4b"
 
 import-fresh@^2.0.0:
   version "2.0.0"
@@ -2322,7 +2384,7 @@ inquirer@^3.0.6:
     strip-ansi "^4.0.0"
     through "^2.3.6"
 
-invariant@^2.2.4:
+invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.npmjs.org/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   dependencies:
@@ -2507,6 +2569,10 @@ is-windows@^1.0.2:
 is-wsl@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/is-wsl/-/is-wsl-1.1.0.tgz#1f16e4aa22b04d1336b66188a66af3c600c3a66d"
+
+isarray@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
 
 isarray@1.0.0, isarray@~1.0.0:
   version "1.0.0"
@@ -3583,7 +3649,7 @@ min-document@^2.19.0:
   dependencies:
     dom-walk "^0.1.0"
 
-minimatch@^3.0.4:
+minimatch@^3.0.2, minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npmjs.org/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   dependencies:
@@ -4044,6 +4110,12 @@ path-parse@^1.0.6:
   version "1.0.6"
   resolved "https://registry.npmjs.org/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
 
+path-to-regexp@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-1.7.0.tgz#59fde0f435badacba103a84e9d3bc64e96b9937d"
+  dependencies:
+    isarray "0.0.1"
+
 path-type@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/path-type/-/path-type-2.0.0.tgz#f012ccb8415b7096fc2daa1054c3d72389594c73"
@@ -4159,7 +4231,7 @@ prompts@^2.0.1:
     kleur "^3.0.2"
     sisteransi "^1.0.0"
 
-prop-types@^15.5.8, prop-types@^15.6.2:
+prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   dependencies:
@@ -4194,6 +4266,14 @@ qs@~6.5.2:
   version "6.5.2"
   resolved "https://registry.npmjs.org/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
 
+query-string@^6.4.2:
+  version "6.7.0"
+  resolved "https://registry.npmjs.org/query-string/-/query-string-6.7.0.tgz#7e92bf8525140cf8c5ebf500f26716b0de5b7023"
+  dependencies:
+    decode-uri-component "^0.2.0"
+    split-on-first "^1.0.0"
+    strict-uri-encode "^2.0.0"
+
 randomatic@^3.0.0:
   version "3.1.1"
   resolved "https://registry.npmjs.org/randomatic/-/randomatic-3.1.1.tgz#b776efc59375984e36c537b2f51a1f0aff0da1ed"
@@ -4215,6 +4295,13 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-addons-shallow-compare@15.6.2:
+  version "15.6.2"
+  resolved "https://registry.npmjs.org/react-addons-shallow-compare/-/react-addons-shallow-compare-15.6.2.tgz#198a00b91fc37623db64a28fd17b596ba362702f"
+  dependencies:
+    fbjs "^0.8.4"
+    object-assign "^4.1.0"
+
 react-clone-referenced-element@^1.0.1:
   version "1.1.0"
   resolved "https://registry.npmjs.org/react-clone-referenced-element/-/react-clone-referenced-element-1.1.0.tgz#9cdda7f2aeb54fea791f3ab8c6ab96c7a77d0158"
@@ -4230,9 +4317,65 @@ react-devtools-core@^3.6.0:
     shell-quote "^1.6.1"
     ws "^3.3.1"
 
-react-is@^16.8.1, react-is@^16.8.3, react-is@^16.8.4:
+react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.3, react-is@^16.8.4, react-is@^16.8.6:
   version "16.8.6"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
+
+react-lifecycles-compat@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
+
+"react-native-deprecated-custom-components@github:facebookarchive/react-native-custom-components":
+  version "0.1.1"
+  resolved "https://codeload.github.com/facebookarchive/react-native-custom-components/tar.gz/d5201e53221a2460b096ee82ff4480f3b0de7fe4"
+  dependencies:
+    create-react-class "15.6.0"
+    fbjs "~0.8.9"
+    immutable "~3.7.6"
+    prop-types "^15.5.10"
+    react-timer-mixin "^0.13.2"
+    rebound "^0.0.13"
+
+react-native-fast-image@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.npmjs.org/react-native-fast-image/-/react-native-fast-image-6.0.3.tgz#e644076c5e21dd8695db07905779352b2b9c1cb8"
+
+react-native-gesture-handler@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.npmjs.org/react-native-gesture-handler/-/react-native-gesture-handler-1.3.0.tgz#d0386f565928ccc1849537f03f2e37fd5f6ad43f"
+  dependencies:
+    hoist-non-react-statics "^2.3.1"
+    invariant "^2.2.2"
+    prop-types "^15.5.10"
+
+react-native-progress@~3.5.0:
+  version "3.5.0"
+  resolved "https://registry.npmjs.org/react-native-progress/-/react-native-progress-3.5.0.tgz#d1ccc7f96dc17c609aedb43b2e6695d67deae0ec"
+  dependencies:
+    prop-types "^15.5.8"
+
+react-native-safe-area-view@^0.14.1:
+  version "0.14.5"
+  resolved "https://registry.npmjs.org/react-native-safe-area-view/-/react-native-safe-area-view-0.14.5.tgz#eeded66bbeb0807f0a7f5f449e7fb2871f7ecf76"
+  dependencies:
+    hoist-non-react-statics "^2.3.1"
+
+"react-native-screens@^1.0.0 || ^1.0.0-alpha":
+  version "1.0.0-alpha.22"
+  resolved "https://registry.npmjs.org/react-native-screens/-/react-native-screens-1.0.0-alpha.22.tgz#7a120377b52aa9bbb94d0b8541a014026be9289b"
+
+react-native-snap-carousel@^3.7.5:
+  version "3.8.0"
+  resolved "https://registry.npmjs.org/react-native-snap-carousel/-/react-native-snap-carousel-3.8.0.tgz#9372222d61d37d0a8a3bec423d135d0caa1b7595"
+  dependencies:
+    prop-types "^15.6.1"
+    react-addons-shallow-compare "15.6.2"
+
+react-native-tab-view@^1.2.0, react-native-tab-view@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.npmjs.org/react-native-tab-view/-/react-native-tab-view-1.4.1.tgz#f113cd87485808f0c991abec937f70fa380478b9"
+  dependencies:
+    prop-types "^15.6.1"
 
 react-native@0.59.9:
   version "0.59.9"
@@ -4289,6 +4432,35 @@ react-native@0.59.9:
     xmldoc "^0.4.0"
     yargs "^9.0.0"
 
+react-navigation-drawer@~1.2.1:
+  version "1.2.1"
+  resolved "https://registry.npmjs.org/react-navigation-drawer/-/react-navigation-drawer-1.2.1.tgz#7bd5efeee7d2f611d3ebb0933e0c8e8eb7cafe52"
+  dependencies:
+    react-native-tab-view "^1.2.0"
+
+react-navigation-stack@~1.4.0:
+  version "1.4.0"
+  resolved "https://registry.npmjs.org/react-navigation-stack/-/react-navigation-stack-1.4.0.tgz#69cdb029ea4ee5877d7e933b3117dc90bc841eb2"
+
+react-navigation-tabs@~1.1.4:
+  version "1.1.4"
+  resolved "https://registry.npmjs.org/react-navigation-tabs/-/react-navigation-tabs-1.1.4.tgz#00a312250df3c519c60b7815a523ace5ee11163a"
+  dependencies:
+    hoist-non-react-statics "^2.5.0"
+    prop-types "^15.6.1"
+    react-lifecycles-compat "^3.0.4"
+    react-native-tab-view "^1.4.1"
+
+react-navigation@^3.11.0:
+  version "3.11.0"
+  resolved "https://registry.npmjs.org/react-navigation/-/react-navigation-3.11.0.tgz#2c82217c452d07d8b9b0929bc7e77e2bcfaf9388"
+  dependencies:
+    "@react-navigation/core" "~3.4.1"
+    "@react-navigation/native" "~3.5.0"
+    react-navigation-drawer "~1.2.1"
+    react-navigation-stack "~1.4.0"
+    react-navigation-tabs "~1.1.4"
+
 react-proxy@^1.1.7:
   version "1.1.8"
   resolved "https://registry.npmjs.org/react-proxy/-/react-proxy-1.1.8.tgz#9dbfd9d927528c3aa9f444e4558c37830ab8c26a"
@@ -4304,6 +4476,10 @@ react-test-renderer@16.8.3:
     prop-types "^15.6.2"
     react-is "^16.8.3"
     scheduler "^0.13.3"
+
+react-timer-mixin@^0.13.2:
+  version "0.13.4"
+  resolved "https://registry.npmjs.org/react-timer-mixin/-/react-timer-mixin-0.13.4.tgz#75a00c3c94c13abe29b43d63b4c65a88fc8264d3"
 
 react-transform-hmr@^1.0.4:
   version "1.0.4"
@@ -4368,6 +4544,10 @@ realpath-native@^1.1.0:
   resolved "https://registry.npmjs.org/realpath-native/-/realpath-native-1.1.0.tgz#2003294fea23fb0672f2476ebe22fcf498a2d65c"
   dependencies:
     util.promisify "^1.0.0"
+
+rebound@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.npmjs.org/rebound/-/rebound-0.0.13.tgz#4a225254caf7da756797b19c5817bf7a7941fac1"
 
 regenerate-unicode-properties@^8.0.2:
   version "8.1.0"
@@ -4534,6 +4714,23 @@ rimraf@^2.5.4, rimraf@^2.6.1, rimraf@^2.6.3:
 rimraf@~2.2.6:
   version "2.2.8"
   resolved "https://registry.npmjs.org/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
+
+rn-curiosity@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.npmjs.org/rn-curiosity/-/rn-curiosity-2.0.3.tgz#a807e8614d45bd9d4f540224d54df3a848a9c106"
+  dependencies:
+    prop-types "^15.7.2"
+    react-native-progress "~3.5.0"
+    react-native-snap-carousel "^3.7.5"
+    rn-fetch-blob "^0.10.15"
+    teaset "^0.6.3"
+
+rn-fetch-blob@^0.10.15:
+  version "0.10.15"
+  resolved "https://registry.npmjs.org/rn-fetch-blob/-/rn-fetch-blob-0.10.15.tgz#3526860c1c57e0bf4c09bdbe409c919264afffba"
+  dependencies:
+    base-64 "0.1.0"
+    glob "7.0.6"
 
 rsvp@^3.3.3:
   version "3.6.2"
@@ -4812,6 +5009,10 @@ spdx-license-ids@^3.0.0:
   version "3.0.4"
   resolved "https://registry.npmjs.org/spdx-license-ids/-/spdx-license-ids-3.0.4.tgz#75ecd1a88de8c184ef015eafb51b5b48bfd11bb1"
 
+split-on-first@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/split-on-first/-/split-on-first-1.1.0.tgz#f610afeee3b12bce1d0c30425e76398b78249a5f"
+
 split-string@^3.0.1, split-string@^3.0.2:
   version "3.1.0"
   resolved "https://registry.npmjs.org/split-string/-/split-string-3.1.0.tgz#7cb09dda3a86585705c64b39a6466038682e8fe2"
@@ -4864,6 +5065,10 @@ stealthy-require@^1.1.1:
 stream-buffers@~2.2.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/stream-buffers/-/stream-buffers-2.2.0.tgz#91d5f5130d1cef96dcfa7f726945188741d09ee4"
+
+strict-uri-encode@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/strict-uri-encode/-/strict-uri-encode-2.0.0.tgz#b9c7330c7042862f6b142dc274bbcc5866ce3546"
 
 string-length@^2.0.0:
   version "2.0.0"
@@ -4954,6 +5159,13 @@ tar@^4:
     mkdirp "^0.5.0"
     safe-buffer "^5.1.2"
     yallist "^3.0.3"
+
+teaset@^0.6.3:
+  version "0.6.3"
+  resolved "https://registry.npmjs.org/teaset/-/teaset-0.6.3.tgz#eaeaedbb6586c53707b6c0a38c631ad6ca8c57e7"
+  dependencies:
+    prop-types "^15.5.10"
+    react-native-deprecated-custom-components "github:facebookarchive/react-native-custom-components"
 
 temp@0.8.3:
   version "0.8.3"

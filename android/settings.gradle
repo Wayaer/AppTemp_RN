@@ -1,3 +1,15 @@
 rootProject.name = 'AppTemplate'
+include ':@react-native-community_async-storage'
+project(':@react-native-community_async-storage').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/async-storage/android')
+include ':@react-native-community_netinfo'
+project(':@react-native-community_netinfo').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/netinfo/android')
+include ':react-native-fast-image'
+project(':react-native-fast-image').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fast-image/android')
+include ':react-native-gesture-handler'
+project(':react-native-gesture-handler').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-gesture-handler/android')
+include ':rn-curiosity'
+project(':rn-curiosity').projectDir = new File(rootProject.projectDir, '../node_modules/rn-curiosity/android')
+include ':rn-fetch-blob'
+project(':rn-fetch-blob').projectDir = new File(rootProject.projectDir, '../node_modules/rn-fetch-blob/android')
 
 include ':app'
