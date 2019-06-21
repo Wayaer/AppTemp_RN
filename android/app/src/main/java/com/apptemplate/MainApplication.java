@@ -4,12 +4,12 @@ import android.app.Application;
 
 import com.curiosity.NativeTools;
 import com.facebook.react.ReactApplication;
+import com.RNFetchBlob.RNFetchBlobPackage;
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 import com.reactnativecommunity.netinfo.NetInfoPackage;
 import com.dylanvann.fastimage.FastImageViewPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.curiosity.CuriosityPackage;
-import com.RNFetchBlob.RNFetchBlobPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -42,12 +42,12 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNFetchBlobPackage(),
             new AsyncStoragePackage(),
             new NetInfoPackage(),
             new FastImageViewPackage(),
             new RNGestureHandlerPackage(),
-            new CuriosityPackage(),
-            new RNFetchBlobPackage()
+            new CuriosityPackage()
       );
     }
 

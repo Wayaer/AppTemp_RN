@@ -61,6 +61,9 @@ export default class App extends Component {
     }
 
     componentDidMount() {
+        // console.log(NativeModules.RNFetchBlob)
+        // Tools.downLoad('https://xyzl.oss-cn-hangzhou.aliyuncs.com/version/android/apk/1/1.apk',)
+        Utils.setStatusBarColor(true)
         Utils.netInfoAddEventListener(this.netInfo)
         Utils.backHandlerAddEventListener(this.onBackPressed)
     }
@@ -102,4 +105,3 @@ export default class App extends Component {
         );
     }
 }
-
