@@ -4,21 +4,14 @@ import {
 import {
     TabBarItem,
     Utils,
+    NativeModules,
     React, Component, CustomButton,
 } from "rn-curiosity"
-import {RNSelector} from "rn-selector"
 import {publicCss} from "../../styles/PublicCss";
 
-
-// const defaultSelectTime = '2018-01-01'
-// const pickerTimeInterval = ['2018-01-12', '2026-01-07']
+const ShareUtils = NativeModules.UMShareModule
 
 
-const defaultSelectTime = '2019-02-28 10:12:13'
-const pickerTimeInterval = ['2018-06-12 09:04:33', '2021-01-07 00:22:34']
-
-// const defaultSelectTime = '12:02:28'
-// const pickerTimeInterval = ['11-06-12', '2021-01-07']
 export default class HomeTab extends Component {
 
     static navigationOptions = ({navigation}) => ({
@@ -40,7 +33,6 @@ export default class HomeTab extends Component {
     }
 
     componentDidMount() {
-        this.showAlertPicker()
         Utils.navigationDidFocus(this, (data) => {
         })
     }
@@ -56,25 +48,12 @@ export default class HomeTab extends Component {
                 <CustomButton
                     buttonStyle={{backgroundColor: Colors.blueStart, padding: 40, marginTop: 100}}
                     onPress={() => {
-                        this.showAlertPicker()
+                        ShareUtils.shareboard('测试', 'https://img-blog.csdn.net/20171219161252613?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYWFyb25fMTEx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center', 'https://blog.csdn.net/aaron_111/article/details/78843837', '测试一下', [0, 2], (code, message) => {
+                            console.log(code, message)
+                        });
                     }}>{"按钮"}</CustomButton>
             </CustomBaseView>
         )
-    }
-
-    showAlertPicker = () => {
-        RNSelector.alertPicker({
-            showUnit: true, itemHeight: 30,
-            pickerType: 'dateTime',
-            defaultSelectTime: defaultSelectTime,
-            pickerTimeInterval: pickerTimeInterval,
-            sureText: '确定', title: '时间', cancelText: '取消',
-        }, (time) => {
-            Utils.Toast(time)
-
-        }, () => {
-
-        })
     }
 
 
