@@ -3,10 +3,8 @@ package com.apptemplate;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.apptemplate.umeng.common.RNUMConfigure;
 import com.apptemplate.umeng.share.ShareModule;
 import com.facebook.react.ReactActivity;
-import com.umeng.commonsdk.UMConfigure;
 import com.umeng.socialize.UMShareAPI;
 
 
@@ -18,6 +16,7 @@ public class MainActivity extends ReactActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ShareModule.initSocialSDK(this);
+
     }
 
     /**
@@ -28,6 +27,7 @@ public class MainActivity extends ReactActivity {
     protected String getMainComponentName() {
         return "AppTemplate";
     }
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

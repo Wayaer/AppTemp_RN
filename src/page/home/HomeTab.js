@@ -4,12 +4,11 @@ import {
 import {
     TabBarItem,
     Utils,
-    NativeModules,
+    Text,
     React, Component, CustomButton,
 } from "rn-curiosity"
 import {publicCss} from "../../styles/PublicCss";
-
-const ShareUtils = NativeModules.UMShareModule
+import NativeUtils from "rn-curiosity/src/NativeUtils";
 
 
 export default class HomeTab extends Component {
@@ -29,11 +28,20 @@ export default class HomeTab extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            data: null
+        };
     }
 
     componentDidMount() {
         Utils.navigationDidFocus(this, (data) => {
+        })
+
+        Utils.receivesMessage('launchApp', (data) => {
+            this.setState({
+                data: data
+            })
+            console.log(data)
         })
     }
 
@@ -48,10 +56,12 @@ export default class HomeTab extends Component {
                 <CustomButton
                     buttonStyle={{backgroundColor: Colors.blueStart, padding: 40, marginTop: 100}}
                     onPress={() => {
-                        ShareUtils.shareboard('测试', 'https://img-blog.csdn.net/20171219161252613?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYWFyb25fMTEx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center', 'https://blog.csdn.net/aaron_111/article/details/78843837', '测试一下', [0, 2], (code, message) => {
-                            console.log(code, message)
-                        });
                     }}>{"按钮"}</CustomButton>
+
+                <Text>{"getScheme:" + this.state.data.getScheme}</Text>
+                <Text>{"getDataString:" + this.state.data.getDataString}</Text>
+                <Text>{"getCategories:" + this.state.data.getCategories}</Text>
+                <Text>{"action:" + this.state.data.action}</Text>
             </CustomBaseView>
         )
     }

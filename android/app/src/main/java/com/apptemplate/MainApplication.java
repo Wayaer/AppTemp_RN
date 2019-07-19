@@ -5,6 +5,7 @@ import android.app.Application;
 import com.apptemplate.umeng.common.DplusReactPackage;
 import com.apptemplate.umeng.common.RNUMConfigure;
 import com.curiosity.NativeTools;
+import com.facebook.react.BuildConfig;
 import com.facebook.react.ReactApplication;
 import com.RNFetchBlob.RNFetchBlobPackage;
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
@@ -72,7 +73,7 @@ public class MainApplication extends Application implements ReactApplication {
     public void onCreate() {
         super.onCreate();
         SoLoader.init(this, /* native exopackage */ false);
-        RNUMConfigure.init(this, "5d1ebdcc0cafb2d8ff000a22", "Umeng", UMConfigure.DEVICE_TYPE_PHONE,null);
+        RNUMConfigure.init(this, "5d1ebdcc0cafb2d8ff000a22", "Umeng", UMConfigure.DEVICE_TYPE_PHONE, null);
 
     }
 }

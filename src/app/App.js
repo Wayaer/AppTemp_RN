@@ -6,6 +6,7 @@ import HomeTab from "../page/home/HomeTab";
 import MineTab from "../page/mine/MineTab";
 import CenterTab from "../page/center/CenterTab";
 import {CustomBaseView, CustomView} from "../utils/CustomComponent";
+import NativeUtils from "rn-curiosity/src/NativeUtils";
 
 let lastBackPressed = Date.now();
 const navigationOptions = {header: null, gesturesEnabled: true,}
@@ -66,6 +67,7 @@ export default class App extends Component {
         Utils.setStatusBarColor(true)
         Utils.netInfoAddEventListener(this.netInfo)
         Utils.backHandlerAddEventListener(this.onBackPressed)
+
     }
 
     componentWillUnmount() {
