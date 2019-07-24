@@ -1,5 +1,5 @@
-import {Utils, React, Component} from "rn-curiosity";
-import {CustomView} from "../utils/CustomComponent";
+import {Utils, React, Component} from 'rn-curiosity';
+import {CustomView} from '../utils/CustomComponent';
 
 export default class Launch extends Component {
     constructor(props) {
@@ -12,14 +12,14 @@ export default class Launch extends Component {
         return (
             <CustomView
                 style={{flex: 1, backgroundColor: Colors.blueStart}}/>
-        )
+        );
     }
 
     componentDidMount() {
         setTimeout(() => {
-                Utils.goToResetView(this, 'Tab')
+                Utils.goToResetView(this, 'Tab');
             }, 2000
-        )
+        );
     }
 
 

@@ -1,6 +1,1 @@
-export default class PublicController {
-
-
-}
-
-
+export default class PublicController {}

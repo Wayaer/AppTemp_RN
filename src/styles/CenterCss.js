@@ -5,7 +5,7 @@ import {
 export const centerCss = StyleSheet.create({
 
 
-})
+});
 
 
 

@@ -1,6 +1,6 @@
-'use strict';
+
 import {
-    Overlay, CenterView, Text, FlatList,
+     CenterView, Text, FlatList,
     View,
     ScrollView,
     RefreshControl,
@@ -8,10 +8,10 @@ import {
     CustomImage,
     CustomButton,
     Utils, Pagination, LinearGradient,
-    React, Component
-} from 'rn-curiosity'
+    React, Component,
+} from 'rn-curiosity';
 
-import FastImage from 'react-native-fast-image'
+import FastImage from 'react-native-fast-image';
 
 /**
  * 自定义 FastImage
@@ -27,9 +27,9 @@ export class CustomFastImage extends Component {
                     }}
                     {this.renderFastImage()}
                 </CenterView>
-            )
+            );
         } else {
-            return this.renderFastImage()
+            return this.renderFastImage();
         }
     }
 
@@ -42,9 +42,9 @@ export class CustomFastImage extends Component {
                 resizeMode={this.props.resizeMode || 'contain'}
                 onProgress={this.props.onProgress}
                 onError={() => {
-                    Utils.Toast('图片加载失败')
+                    Utils.Toast('图片加载失败');
                 }}
-            />)
+            />);
     }
 }
 
@@ -120,7 +120,7 @@ export class CustomPagination extends Component {
  */
 export class CustomFlatList extends Component {
     scrollToOffset = (y) => {
-        return this.flatList.scrollToOffset({animated: true, offset: y})
+        return this.flatList.scrollToOffset({animated: true, offset: y});
     }
 
     render() {
@@ -148,9 +148,9 @@ export class CustomFlatList extends Component {
                         style={{
                             marginBottom: Utils.getHeight(60),
                             width: Utils.getWidth(100),
-                            height: Utils.getWidth(101)
+                            height: Utils.getWidth(101),
                         }}/>
-                </CenterView>)
+                </CenterView>);
         }
     }
 
@@ -164,7 +164,7 @@ export class CustomFlatList extends Component {
                 <Text style={{color: Colors.gray999}}>{'   到底了   '}</Text>
                 <CustomLine width={Screen_Width * 0.3}/>
             </CenterView>
-        )
+        );
     }
 }
 
@@ -183,7 +183,7 @@ export class CustomScrollView extends Component {
                 {...this.props}
                 style={[{
                     width: Screen_Width,
-                }, this.props.style,]}
+                }, this.props.style ]}
                 keyboardShouldPersistTaps={'always'}
                 showsHorizontalScrollIndicator={false}
                 showsVerticalScrollIndicator={false}
@@ -211,15 +211,15 @@ export class CustomText extends Component {
                     width: Utils.getWidth(570),
                     height: Utils.getHeight(80),
                     backgroundColor: Colors.mainRed,
-                    borderRadius: this.props.borderRadius || 5
+                    borderRadius: this.props.borderRadius || 5,
                 }, this.props.buttonStyle]}
                 textStyle={[{
                     color: Colors.mainWhite,
-                    fontSize: TextSize.textSize_16
+                    fontSize: TextSize.textSize_16,
                 }, this.props.textStyle]}
                 onPress={this.props.onPress}>
                 {this.props.children || 'Button'}
-            </CustomButton>)
+            </CustomButton>);
 
         } else {
             return (
@@ -229,7 +229,7 @@ export class CustomText extends Component {
                     onPress={this.props.onPress}>
                     {this.props.children || 'Button'}
                 </CustomButton>
-            )
+            );
         }
     }
 }
@@ -248,13 +248,13 @@ export class LinearGradientButton extends Component {
                 style={[{
                     width: Utils.getWidth(570),
                     height: Utils.getHeight(80),
-                    borderRadius: this.props.borderRadius || 5
+                    borderRadius: this.props.borderRadius || 5,
                 }]}>
                 <Text style={{
                     color: Colors.mainWhite,
-                    fontSize: TextSize.textSize_16
+                    fontSize: TextSize.textSize_16,
                 }}>{this.props.children}</Text>
-            </LinearGradient>)
+            </LinearGradient>);
     }
 }
 
@@ -270,7 +270,7 @@ export class CustomProgressBar extends Component {
                 height: 2,
                 width: Screen_Width * 0.7,
                 justifyContent: 'center',
-                backgroundColor: Colors.background
+                backgroundColor: Colors.background,
             }, this.props.style]}>
                 <View style={[{
                     position: 'absolute',
@@ -279,7 +279,7 @@ export class CustomProgressBar extends Component {
                     borderRadius: 25,
                 }, this.props.progressStyle]}/>
             </View>
-        )
+        );
     }
 }
 
@@ -293,17 +293,17 @@ export class CustomLine extends Component {
             <View style={{
                 height: this.props.height ? this.props.height : Utils.getHeight(1),
                 backgroundColor: Colors.mainWhite,
-                width: this.props.width || Screen_Width
+                width: this.props.width || Screen_Width,
             }}>
                 <View style={[{
                     backgroundColor: Colors.background,
                     height: this.props.height ? this.props.height : Utils.getHeight(1),
-                    width: '100%'
+                    width: '100%',
                 }, this.props.style]}/>
             </View>
 
 
-        )
+        );
     }
 }
 

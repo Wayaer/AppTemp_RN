@@ -5,7 +5,7 @@ import {
 export const mineCss = StyleSheet.create({
 
 
-})
+});
 
 
 
