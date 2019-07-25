@@ -4911,9 +4911,10 @@ rimraf@~2.2.6:
   version "2.2.8"
   resolved "https://registry.npmjs.org/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
 
-rn-curiosity@^2.2.3:
-  version "2.2.3"
-  resolved "https://registry.npmjs.org/rn-curiosity/-/rn-curiosity-2.2.3.tgz#8e58efc9dc9120bffbce726c464b091f91834594"
+rn-curiosity@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.npmjs.org/rn-curiosity/-/rn-curiosity-2.2.6.tgz#e3158572a85293da78d691010e957a6888c0d917"
+  integrity sha512-I0t9IWodZdN2372bIn+XaRN/F3+++M46KSwE8m2vz27OzceGvDanUvcdA+LG+MXQq9JGhj3vWUWxDr5S83HJVw==
   dependencies:
     eslint "^6.1.0"
     prop-types "^15.7.2"

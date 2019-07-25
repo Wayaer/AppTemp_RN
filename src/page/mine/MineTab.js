@@ -1,9 +1,8 @@
-
 import { CustomBaseView } from '../../utils/CustomComponent';
 import {
   React, Component,
   TabBarItem,
-  Utils
+  Utils,
 } from 'rn-curiosity';
 import { publicCss } from '../../styles/PublicCss';
 
@@ -17,19 +16,19 @@ export default class MineTab extends Component {
         imageStyle={publicCss.tabBarImage}
         onPress={() => {
           navigation.navigate(navigation.state.routeName);
-        }}/>)
+        }}/>),
   });
 
   constructor(props) {
     super(props);
     this.state = {
-      userInfo: {}
+      userInfo: {},
     };
   }
 
   componentDidMount() {
-    Utils.navigationDidFocus(this, async (data) => {
-
+    Utils.navigationDidFocus(this, data => {
+      console.log(data);
     });
   }
 
@@ -38,7 +37,7 @@ export default class MineTab extends Component {
 
   render() {
     return (
-      <CustomBaseView />
+      <CustomBaseView/>
     );
   }
 
