@@ -24,7 +24,6 @@ export default class CenterTab extends Component {
 
     componentDidMount() {
             Utils.navigationDidFocus(this, data => {
-                console.log(data);
             });
     }
 

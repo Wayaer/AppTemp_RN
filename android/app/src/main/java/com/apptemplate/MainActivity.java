@@ -15,7 +15,6 @@ public class MainActivity extends ReactActivity {
     protected String getMainComponentName() {
         return "AppTemplate";
     }
-
     @Override
     protected ReactActivityDelegate createReactActivityDelegate() {
         return new ReactActivityDelegate(this, getMainComponentName()) {

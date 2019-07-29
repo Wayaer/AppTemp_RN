@@ -28,7 +28,6 @@ export default class MineTab extends Component {
 
   componentDidMount() {
     Utils.navigationDidFocus(this, data => {
-      console.log(data);
     });
   }
 

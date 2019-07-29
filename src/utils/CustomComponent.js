@@ -11,7 +11,7 @@ import {
     React, Component,
 } from 'rn-curiosity';
 
-import FastImage from 'react-native-fast-image';
+// import FastImage from 'react-native-fast-image';
 
 /**
  * 自定义 FastImage
@@ -34,17 +34,17 @@ export class CustomFastImage extends Component {
     }
 
     renderFastImage = () => {
-        return (
-            <FastImage
-                {...this.props}
-                style={this.props.style}
-                source={this.props.source || this.props.url && {uri: this.props.url} || this.props.require && this.props.require}
-                resizeMode={this.props.resizeMode || 'contain'}
-                onProgress={this.props.onProgress}
-                onError={() => {
-                    Utils.Toast('图片加载失败');
-                }}
-            />);
+        // return (
+        //     <FastImage
+        //         {...this.props}
+        //         style={this.props.style}
+        //         source={this.props.source || this.props.url && {uri: this.props.url} || this.props.require && this.props.require}
+        //         resizeMode={this.props.resizeMode || 'contain'}
+        //         onProgress={this.props.onProgress}
+        //         onError={() => {
+        //             Utils.Toast('图片加载失败');
+        //         }}
+        //     />);
     }
 }
 

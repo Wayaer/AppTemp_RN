@@ -1,3 +1,7 @@
+/**
+ * @format
+ */
+
 import {AppRegistry, YellowBox} from 'react-native';
 import './src/utils/Global';
 import App from './src/app/App';
