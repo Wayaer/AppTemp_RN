@@ -1,12 +1,15 @@
 import { Colors, Url, CustomConstant } from './CustomConstant';
 import { CustomTools } from './CustomTools';
-import { Constant, Utils, FontSize, Overlay } from 'rn-curiosity';
+import { Constant, Utils, FontSize, Overlay } from 'wayae';
 
 if (!__DEV__) {
   global.console = {
-    log: () => {},
-    warn: () => {},
-    error: () => {},
+    log: () => {
+    },
+    warn: () => {
+    },
+    error: () => {
+    },
   };
 }
 

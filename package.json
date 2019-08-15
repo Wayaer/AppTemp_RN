@@ -5,7 +5,9 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "pod": "cd ios && pod install",
+    "lint": "eslint .",
+    "react-native-start": "react-native start --port 9176"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.5.1",
@@ -14,8 +16,9 @@
     "react-native": "0.60.4",
     "react-native-gesture-handler": "^1.3.0",
     "react-navigation": "^3.11.1",
-    "rn-curiosity": "^2.2.6",
-    "rn-fetch-blob": "^0.10.16"
+    "rn-curiosity": "3.0.5",
+    "rn-fetch-blob": "^0.10.16",
+    "wayae": "0.0.7"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",

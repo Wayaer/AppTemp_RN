@@ -1,15 +1,15 @@
 import {
   createStackNavigator,
   createBottomTabNavigator,
-  createAppContainer
+  createAppContainer,
 } from 'react-navigation';
-import { Utils,  React, Component,  } from 'rn-curiosity';
+import { Utils, React, PureComponent } from 'wayae';
 import Launch from './Launch';
 import LoginView from './LoginView';
 import HomeTab from '../page/home/HomeTab';
 import MineTab from '../page/mine/MineTab';
 import CenterTab from '../page/center/CenterTab';
-import {  CustomView } from '../utils/CustomComponent';
+import { CustomView } from '../utils/CustomComponent';
 
 let lastBackPressed = Date.now();
 const navigationOptions = { header: null, gesturesEnabled: true };
@@ -41,33 +41,32 @@ const Navigator = createStackNavigator(
               borderTopWidth: 0,
             },
           },
-        }
+        },
       ),
-      navigationOptions: navigationOptions
+      navigationOptions: navigationOptions,
     },
 
     Launch: {
       screen: Launch,
-      navigationOptions: navigationOptions
+      navigationOptions: navigationOptions,
     },
     LoginView: {
       screen: LoginView,
-      navigationOptions: navigationOptions
+      navigationOptions: navigationOptions,
     },
   },
   {
-    initialRouteName: 'Launch' // 默认显示界面
-  }
+    initialRouteName: 'Launch', // 默认显示界面
+  },
 );
 const CreateTab = createAppContainer(Navigator);
-export default class App extends Component {
+export default class App extends PureComponent {
   constructor(props) {
     super(props);
   }
 
   componentDidMount() {
-    // console.log(NativeModules.RNFetchBlob)
-    // Tools.downLoad('https://xyzl.oss-cn-hangzhou.aliyuncs.com/version/android/apk/1/1.apk',)
+
     Utils.setStatusBarColor(true);
     Utils.netInfoAddEventListener(this.netInfo);
     Utils.backHandlerAddEventListener(this.onBackPressed);
@@ -98,7 +97,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <CustomView style={{ flex: 1 }}>
+      <CustomView style={{ width: Screen_Width, height: ActualScreen_Height }}>
         <CreateTab
           onNavigationStateChange={(prevState, newState, action) => {
             if (Android) {

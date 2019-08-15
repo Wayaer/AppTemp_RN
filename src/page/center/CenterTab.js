@@ -1,6 +1,6 @@
 
 import {CustomBaseView, } from '../../utils/CustomComponent';
-import {TabBarItem, Utils, React, Component} from 'rn-curiosity';
+import {TabBarItem, Utils, React, Component} from 'wayae';
 import {publicCss} from '../../styles/PublicCss';
 
 export default class CenterTab extends Component {

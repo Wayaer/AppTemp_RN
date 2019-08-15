@@ -1,5 +1,7 @@
 package com.apptemplate;
 
+import android.os.Bundle;
+
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
@@ -24,4 +26,16 @@ public class MainActivity extends ReactActivity {
             }
         };
     }
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+//        /**
+//         * run-android  固定服务端访问ip
+//         */
+//        SharedPreferences m = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+//        SharedPreferences.Editor editor = m.edit();
+//        editor.putString("debug_http_host", "192.168.0.22:8865"); //修改为自己电脑的ip地址
+//        editor.commit();
+    }
+
 }
