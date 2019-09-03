@@ -29,6 +29,7 @@ public class MainActivity extends ReactActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 //        /**
 //         * run-android  固定服务端访问ip
 //         */
