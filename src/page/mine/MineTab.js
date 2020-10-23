@@ -3,7 +3,7 @@ import {
   React, Component,
   TabBarItem,
   Utils, ART, Image, BarLine, Constant, NativeUtils,
-} from 'wayae';
+} from 'rn-waya';
 import { publicCss } from '../../styles/PublicCss';
 
 let {
@@ -24,7 +24,7 @@ export default class MineTab extends Component {
   static navigationOptions = ({ navigation }) => ({
     tabBarIcon: ({ focused }) => (
       <TabBarItem
-        imageSource={focused ? require('../../resources/mine/mine_selected.png') : require('../../resources/mine/mine_default.png')}
+        imageSource={focused ? require('../../res/mine/mine_selected.png') : require('../../res/mine/mine_default.png')}
         text={'我的'}
         textStyle={[{ color: focused ? Colors.mainBlack : Colors.gray999 }, publicCss.tabBarText]}
         imageStyle={publicCss.tabBarImage}

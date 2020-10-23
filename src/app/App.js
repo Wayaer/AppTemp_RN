@@ -3,7 +3,7 @@ import {
   createBottomTabNavigator,
   createAppContainer,
 } from 'react-navigation';
-import { Utils, React, PureComponent } from 'wayae';
+import { Utils, React, PureComponent } from 'rn-waya';
 import Launch from './Launch';
 import LoginView from './LoginView';
 import HomeTab from '../page/home/HomeTab';

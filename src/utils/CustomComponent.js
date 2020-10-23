@@ -8,7 +8,7 @@ import {
   CustomButton,
   Utils, Pagination, LinearGradient,
   React, Component,
-} from 'wayae';
+} from 'rn-waya';
 
 // import FastImage from 'react-native-fast-image';
 

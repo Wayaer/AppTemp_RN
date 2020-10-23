@@ -1,6 +1,6 @@
 'use strict';
 import { androidBundleversion, iosBundleVersion } from '../../package';
-import { Utils, FetchBlob } from 'wayae';
+import { Utils, FetchBlob } from 'rn-waya';
 
 /**
  * 其他工具类

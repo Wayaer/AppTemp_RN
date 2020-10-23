@@ -1,4 +1,4 @@
-import { Utils, React, Component, FetchBlob, NativeUtils, NativeSQLite } from 'wayae';
+import { Utils, React, Component, FetchBlob, NativeUtils, NativeSQLite } from 'rn-waya';
 import { CustomView } from '../utils/CustomComponent';
 
 let background = true;

@@ -2,7 +2,7 @@
 import {
     CustomView,
 } from '../utils/CustomComponent';
-import {Component, React} from 'wayae';
+import {Component, React} from 'rn-waya';
 
 
 export default class LoginView extends Component {

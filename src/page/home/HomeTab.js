@@ -5,7 +5,7 @@ import {
   React,
   Component,
   ART, Text,
-} from 'wayae';
+} from 'rn-waya';
 import { publicCss } from '../../styles/PublicCss';
 
 
@@ -23,8 +23,8 @@ export default class HomeTab extends Component {
       <TabBarItem
         imageSource={
           focused
-            ? require('../../resources/home/home_selected.png')
-            : require('../../resources/home/home_default.png')
+            ? require('../../res/home/home_selected.png')
+            : require('../../res/home/home_default.png')
         }
         text={'首页'}
         textStyle={[

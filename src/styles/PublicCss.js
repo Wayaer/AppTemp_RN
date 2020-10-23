@@ -1,7 +1,7 @@
 import {
     StyleSheet,
 } from 'react-native';
-import {Utils} from 'wayae';
+import {Utils} from 'rn-waya';
 
 export const publicCss = StyleSheet.create({
     tabBarText: {fontSize: TextSize.textSize_10},

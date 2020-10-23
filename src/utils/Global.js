@@ -1,6 +1,6 @@
 import { Colors, Url, CustomConstant } from './CustomConstant';
 import { CustomTools } from './CustomTools';
-import { Constant, Utils, FontSize, Overlay } from 'wayae';
+import { Constant, Utils, FontSize, Overlay } from 'rn-waya';
 
 if (!__DEV__) {
   global.console = {
