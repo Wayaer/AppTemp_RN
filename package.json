@@ -14,17 +14,25 @@
     "rns": "react-native start --port 9176"
   },
   "dependencies": {
-    "@react-native-community/async-storage": "^1.12.1",
+    "rn-waya": "0.2.3",
+    "rn-curiosity": "0.5.1",
+    "rn-scrollview": "3.0.3",
     "@react-native-community/netinfo": "^5.9.7",
-    "react": "16.13.1",
+    "react": "^16.14.0",
+    "hermesvm": "^0.1.1",
     "react-native": "0.63.3",
-    "react-native-gesture-handler": "1.8.0",
     "react-native-svg": "^12.1.0",
+    "rn-fetch-blob": "^0.12.0",
     "react-navigation": "4.4.2",
-    "rn-curiosity": "../../library/rn-curiosity",
-    "rn-scrollview": "../../library/rn-scrollview",
-    "rn-waya": "../../library/rn-waya",
-    "rn-fetch-blob": "^0.12.0"
+    "react-navigation-stack": "2.8.4",
+    "@react-native-community/masked-view": "^0.1.10",
+    "react-navigation-tabs": "2.9.2",
+    "react-native-screens": "^2.11.0",
+    "react-native-reanimated": "^1.13.1",
+    "react-native-safe-area-context": "3.1.8",
+    "@react-navigation/native": "5.8.0",
+    "react-native-gesture-handler": "1.8.0",
+    "teaset": "^0.7.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",

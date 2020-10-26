@@ -1,18 +1,18 @@
-import { Colors, Url, CustomConstant } from './CustomConstant';
-import { CustomTools } from './CustomTools';
-import { Constant, Utils, FontSize, Overlay } from 'rn-waya';
+import {Colors, Url, CustomConstant} from './CustomConstant';
+import {CustomTools} from './CustomTools';
+import {Constant, Utils, StorageTools, FontSize} from 'rn-waya';
+import {Overlay} from 'teaset';
 
 if (!__DEV__) {
-  global.console = {
-    log: () => {
-    },
-    warn: () => {
-    },
-    error: () => {
-    },
-  };
+    global.console = {
+        log: () => {
+        },
+        warn: () => {
+        },
+        error: () => {
+        },
+    };
 }
-
 // 系统是18:9屏幕
 global.Comprehensive_Screen = Utils.phoneFit();
 //全机型屏幕高度
@@ -27,7 +27,7 @@ global.ActualScreen_Height = Constant.ActualScreen_Height;
 global.Screen_Width = Constant.Screen_Width;
 // 获取屏幕分辨率
 global.Screen_Scale = Constant.Screen_Scale;
-Utils.getStorage(); //初始化数据储存
+StorageTools.getStorage(); //初始化数据储存
 global.Colors = Colors; // 常用颜色
 global.TextSize = FontSize; // 常用字体大小
 global.Url = Url; // 网络Api

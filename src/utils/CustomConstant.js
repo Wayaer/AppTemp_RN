@@ -1,12 +1,10 @@
 const base = {
     base: '',
     OSSBase: '', //阿里云
-
 };
 
 export const Url = {
     OSSVersion: base.OSSBase + 'version/',
-
 };
 
 export const Colors = {

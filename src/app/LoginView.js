@@ -1,9 +1,5 @@
-
-import {
-    CustomView,
-} from '../utils/CustomComponent';
-import {Component, React} from 'rn-waya';
-
+import {CustomView} from '../utils/CustomComponent';
+import React, {Component} from 'react'
 
 export default class LoginView extends Component {
     constructor(props) {
@@ -15,7 +11,7 @@ export default class LoginView extends Component {
     render() {
         return (
             <CustomView
-                style={{flex: 1, justifyContent: 'center', alignItems: 'center'}} />
+                style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}/>
         );
     }
 

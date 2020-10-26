@@ -1,40 +1,37 @@
-import { Utils, React, Component, FetchBlob, NativeUtils, NativeSQLite } from 'rn-waya';
-import { CustomView } from '../utils/CustomComponent';
+import {NativeUtils} from 'rn-curiosity';
+import {CustomView} from '../utils/CustomComponent';
+import React, {Component} from 'react';
+import {NavigationTools} from 'rn-waya';
 
 let background = true;
 export default class Launch extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
 
 
-  render() {
-    return (
-      <CustomView
-        onPress={() => {
-          if (background) {
-            NativeUtils.hideStatusBar();
-          } else {
-            NativeUtils.showStatusBar();
-          }
-          background = !background;
-        }}
-        style={{ flex: 1, backgroundColor: Colors.blueStart }}/>
-    );
-  }
+    render() {
+        return (
+            <CustomView
+                onPress={() => {
+                    if (background) {
+                        NativeUtils.hideStatusBar();
+                    } else {
+                        NativeUtils.showStatusBar();
+                    }
+                    background = !background;
+                }}
+                style={{flex: 1, backgroundColor: Colors.blueStart}}/>
+        );
+    }
 
-  componentDidMount() {
-
-
-    NativeSQLite.update('book', 'books', { sex: '更新的内容', name: '随便更行的' }, 'id', '6', (data) => {
-      console.log(data);
-    });
-    setTimeout(() => {
-        // Utils.goToResetView(this, 'Tab');
-      }, 2000,
-    );
-  }
+    componentDidMount() {
+        setTimeout(() => {
+                NavigationTools.goToResetView(this, 'Tab');
+            }, 2000,
+        );
+    }
 
 
 }

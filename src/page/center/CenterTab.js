@@ -1,7 +1,7 @@
-
-import {CustomBaseView, } from '../../utils/CustomComponent';
-import {TabBarItem, Utils, React, Component} from 'rn-waya';
+import {CustomBaseView} from '../../utils/CustomComponent';
+import {NavigationTools, TabBarItem} from 'rn-waya';
 import {publicCss} from '../../styles/PublicCss';
+import React, {Component} from 'react';
 
 export default class CenterTab extends Component {
 
@@ -10,7 +10,7 @@ export default class CenterTab extends Component {
             <TabBarItem
                 imageSource={focused ? require('../../res/center/center_selected.png') : require('../../res/center/center_default.png')}
                 text={'动态'}
-                textStyle={[{color: focused ? Colors.mainBlack : Colors.gray999, }, publicCss.tabBarText]}
+                textStyle={[{color: focused ? Colors.mainBlack : Colors.gray999}, publicCss.tabBarText]}
                 imageStyle={publicCss.tabBarImage}
                 onPress={() => {
                     navigation.navigate(navigation.state.routeName);
@@ -23,8 +23,8 @@ export default class CenterTab extends Component {
     }
 
     componentDidMount() {
-            Utils.navigationDidFocus(this, data => {
-            });
+        NavigationTools.navigationDidFocus(this, data => {
+        });
     }
 
 
@@ -34,7 +34,7 @@ export default class CenterTab extends Component {
 
     render() {
         return (
-            <CustomBaseView />
+            <CustomBaseView/>
         );
     }
 
