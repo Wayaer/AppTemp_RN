@@ -23,5 +23,4 @@ if (!__DEV__) {
 console.disableYellowBox = true;
 
 YellowBox.ignoreWarnings(['Require cycle:']);
-
 AppRegistry.registerComponent(name, () => App);
