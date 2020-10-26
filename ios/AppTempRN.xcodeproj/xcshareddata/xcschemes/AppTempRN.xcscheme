@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "app_temp_rn-tvOS.app"
-               BlueprintName = "app_temp_rn-tvOS"
-               ReferencedContainer = "container:app_temp_rn.xcodeproj">
+               BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+               BuildableName = "AppTempRN.app"
+               BlueprintName = "AppTempRN"
+               ReferencedContainer = "container:AppTempRN.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "app_temp_rn-tvOSTests.xctest"
-               BlueprintName = "app_temp_rn-tvOSTests"
-               ReferencedContainer = "container:app_temp_rn.xcodeproj">
+               BlueprintIdentifier = "00E356ED1AD99517003FC87E"
+               BuildableName = "AppTempRNTests.xctest"
+               BlueprintName = "AppTempRNTests"
+               ReferencedContainer = "container:AppTempRN.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -54,10 +54,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "app_temp_rn-tvOS.app"
-            BlueprintName = "app_temp_rn-tvOS"
-            ReferencedContainer = "container:app_temp_rn.xcodeproj">
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "AppTempRN.app"
+            BlueprintName = "AppTempRN"
+            ReferencedContainer = "container:AppTempRN.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -71,10 +71,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "app_temp_rn-tvOS.app"
-            BlueprintName = "app_temp_rn-tvOS"
-            ReferencedContainer = "container:app_temp_rn.xcodeproj">
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "AppTempRN.app"
+            BlueprintName = "AppTempRN"
+            ReferencedContainer = "container:AppTempRN.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
